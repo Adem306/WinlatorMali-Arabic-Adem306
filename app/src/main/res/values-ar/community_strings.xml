@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_game_info">البحث عن معلومات اللعبة</string>
+    <string name="no_internet_connection">لا يوجد اتصال بالإنترنت. يرجى التحقق من إعدادات الشبكة.</string>
+    <string name="community_search_instruction">بحث</string>
+</resources>
