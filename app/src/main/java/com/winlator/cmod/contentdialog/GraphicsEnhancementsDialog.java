@@ -350,7 +350,7 @@ public class GraphicsEnhancementsDialog extends ContentDialog {
 
     private void showFPSLimitInfo() {
         ContentDialog dialog = new ContentDialog(getContext(), R.layout.info_message_dialog);
-        dialog.setTitle("Universal FPS Limiter");
+        dialog.setTitle("Universal معدل الإطارات Limiter");
         dialog.setIcon(R.drawable.ic_driver_info);
 
         TextView tvMessage = dialog.findViewById(R.id.TVInfoMessage);

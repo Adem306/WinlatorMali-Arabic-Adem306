@@ -77,7 +77,7 @@ public class ShortcutSettingsDialog extends ContentDialog {
 //            this.contentsManager = new ContentsManager(containerManager.getContext());
 //            this.contentsManager.syncTurnipContents();
 //        } else {
-//            Toast.makeText(fragment.getContext(), "Failed to initialize container manager. Please try again.", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(fragment.getContext(), "فشل إلى initialize الحاوية مدير. Please try again.", Toast.LENGTH_SHORT).show();
 //            return;
 //        }
 
@@ -237,7 +237,7 @@ public class ShortcutSettingsDialog extends ContentDialog {
 
         findViewById(R.id.BTHelpRamBooster).setOnClickListener(v -> {
             ContentDialog dialog = new ContentDialog(getContext(), R.layout.bcn_info_dialog);
-            dialog.setTitle("RAM Booster (LMK Trigger)");
+            dialog.setTitle("معزز ذاكرة RAM (مُشغّل LMK)");
             dialog.setIcon(R.drawable.ic_driver_info);
 
             TextView tvMessage = dialog.findViewById(R.id.TVInfoMessage);
