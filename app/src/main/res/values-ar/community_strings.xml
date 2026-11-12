@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_game_info">بحث Game المعلومات</string>
+    <string name="no_internet_connection">لا internet connection. Please check your network الإعدادات.</string>
+    <string name="community_search_instruction">Enter the official full الاسم of the اللعبة for accurate community indexing.</string>
+</resources>
