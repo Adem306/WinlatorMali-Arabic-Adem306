@@ -124,7 +124,7 @@ public class FileManagerFragment extends Fragment {
         
         if (getActivity() instanceof AppCompatActivity activity) {
             if (activity.getSupportActionBar() != null) {
-                if (pickFolderMode) activity.getSupportActionBar().setTitle("Select save folder");
+                if (pickFolderMode) activity.getSupportActionBar().setTitle("اختيار حفظ المجلد");
                 else activity.getSupportActionBar().setTitle(R.string.file_manager);
             }
         }
@@ -470,13 +470,13 @@ public class FileManagerFragment extends Fragment {
             tvDriveName.setText("Drive D:");
             ivDriveIcon.setImageResource(R.drawable.ic_drive_storage);
         } else if (Objects.equals(path, Environment.getExternalStorageDirectory().getAbsolutePath())) {
-            tvDriveName.setText("Internal Storage");
+            tvDriveName.setText("Internal التخزين");
             ivDriveIcon.setImageResource(R.drawable.ic_drive_storage);
         } else if (path.startsWith(com.winlator.cmod.xenvironment.ImageFs.find(requireContext()).getRootDir().getAbsolutePath())) {
             tvDriveName.setText("Drive Z:");
             ivDriveIcon.setImageResource(R.drawable.ic_x11_icon);
         } else {
-            tvDriveName.setText("Storage");
+            tvDriveName.setText("التخزين");
             ivDriveIcon.setImageResource(R.drawable.ic_drive_storage);
         }
     }
@@ -585,7 +585,7 @@ public class FileManagerFragment extends Fragment {
             
             File desktopDir = container.getDesktopDir();
             if (!desktopDir.exists() && !desktopDir.mkdirs()) {
-                Toast.makeText(getContext(), "Could not create desktop directory", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Could not create سطح المكتب directory", Toast.LENGTH_SHORT).show();
                 return;
             }
             
@@ -601,7 +601,7 @@ public class FileManagerFragment extends Fragment {
                 writer.println("Icon=" + displayName);
                 writer.println("container_id:" + container.id);
             }
-            Toast.makeText(getContext(), "Shortcut created on container desktop!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Shortcut created on الحاوية سطح المكتب!", Toast.LENGTH_SHORT).show();
 
             if (file.getName().toLowerCase().endsWith(".exe")) {
                 File iconDir64 = container.getIconsDir(64);
@@ -610,7 +610,7 @@ public class FileManagerFragment extends Fragment {
                 ExeIconExtractor.extractAsync(file, iconDest, false, null);
             }
         } catch (IOException e) {
-            Toast.makeText(getContext(), "Failed to create shortcut", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "فشل إلى create shortcut", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -692,7 +692,7 @@ public class FileManagerFragment extends Fragment {
                     if (file.renameTo(newFile)) {
                         loadFiles();
                     } else {
-                        Toast.makeText(getContext(), "Rename failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "فشلت إعادة التسمية", Toast.LENGTH_SHORT).show();
                     }
                 });
                 return;
@@ -700,7 +700,7 @@ public class FileManagerFragment extends Fragment {
             if (file.renameTo(newFile)) {
                 loadFiles();
             } else {
-                Toast.makeText(getContext(), "Rename failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "فشلت إعادة التسمية", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -744,7 +744,7 @@ public class FileManagerFragment extends Fragment {
         clipboardFiles.addAll(files);
         isCutOperation = true;
         fabPaste.setVisibility(View.VISIBLE);
-        Toast.makeText(getContext(), "Cut " + files.size() + " items", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "قص " + files.size() + " items", Toast.LENGTH_SHORT).show();
         clearSelection();
     }
 
@@ -801,7 +801,7 @@ public class FileManagerFragment extends Fragment {
         };
 
         ContentDialog dialog = new ContentDialog(requireContext());
-        dialog.setTitle("File Conflict");
+        dialog.setTitle("ملف Conflict");
         dialog.setMessage(message);
 
         android.widget.ListView listView = dialog.findViewById(R.id.ListView);
@@ -893,7 +893,7 @@ public class FileManagerFragment extends Fragment {
                     if (getActivity() != null) getActivity().getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
                     fileProgressDialog.dismiss();
                     if (finalCancelled) {
-                        Toast.makeText(getContext(), "Operation cancelled", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "تم إلغاء العملية", Toast.LENGTH_SHORT).show();
                     } else if (finalSuccess) {
                         if (isCutOperation) {
                             clipboardFiles.clear();
@@ -901,7 +901,7 @@ public class FileManagerFragment extends Fragment {
                         }
                         loadFiles();
                     } else {
-                        Toast.makeText(getContext(), "Paste completed with some errors", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "اكتمل اللصق مع وجود بعض الأخطاء", Toast.LENGTH_SHORT).show();
                         loadFiles();
                     }
                 });
@@ -946,11 +946,11 @@ public class FileManagerFragment extends Fragment {
                         fileProgressDialog.dismiss();
                         clearSelection();
                         if (isCancelled.get()) {
-                            Toast.makeText(getContext(), "Operation cancelled", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "تم إلغاء العملية", Toast.LENGTH_SHORT).show();
                         } else if (finalSuccess) {
                             loadFiles();
                         } else {
-                            Toast.makeText(getContext(), "Remove failed for some items", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "إزالة فشل for some عناصر", Toast.LENGTH_SHORT).show();
                             loadFiles();
                         }
                     });
@@ -1037,13 +1037,13 @@ public class FileManagerFragment extends Fragment {
         ContentDialog.prompt(getContext(), R.string.new_folder, "", folderName -> {
             File newDir = new File(parentDir, folderName);
             if (newDir.exists()) {
-                Toast.makeText(getContext(), "A folder with this name already exists", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "يوجد مجلد بهذا الاسم بالفعل", Toast.LENGTH_SHORT).show();
                 return;
             }
             if (newDir.mkdirs()) {
                 loadFiles();
             } else {
-                Toast.makeText(getContext(), "Failed to create folder", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "فشل إنشاء المجلد", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -1056,7 +1056,7 @@ public class FileManagerFragment extends Fragment {
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             startActivity(Intent.createChooser(intent, getString(R.string.share)));
         } catch (Exception e) {
-            Toast.makeText(getContext(), "Failed to share file", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "فشل مشاركة الملف", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -1064,7 +1064,7 @@ public class FileManagerFragment extends Fragment {
         if (file.isFile()) {
             displayProperties(file, file.length(), 0, 0);
         } else {
-            Toast.makeText(getContext(), "Calculating folder size...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "جارٍ حساب حجم المجلد…", Toast.LENGTH_SHORT).show();
             new Thread(() -> {
                 long[] info = getDirectoryInfo(file, new java.util.HashSet<>());
                 if (getActivity() != null) {
@@ -1108,7 +1108,7 @@ public class FileManagerFragment extends Fragment {
         File outputDir = new File(currentDir, folderName);
         if (!outputDir.exists()) outputDir.mkdirs();
 
-        Toast.makeText(getContext(), "Extracting to " + folderName + "...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "جارٍ الاستخراج إلى " + folderName + "...", Toast.LENGTH_SHORT).show();
         
         TarCompressorUtils.Type finalType = type;
         new Thread(() -> {
@@ -1124,10 +1124,10 @@ public class FileManagerFragment extends Fragment {
             if (getActivity() != null) {
                 getActivity().runOnUiThread(() -> {
                     if (success) {
-                        Toast.makeText(getContext(), "Extraction complete", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "اكتمل الاستخراج", Toast.LENGTH_SHORT).show();
                         loadFiles();
                     } else {
-                        Toast.makeText(getContext(), "Extraction failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "فشل الاستخراج", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

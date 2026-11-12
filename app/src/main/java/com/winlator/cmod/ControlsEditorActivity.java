@@ -158,7 +158,7 @@ public class ControlsEditorActivity extends AppCompatActivity implements View.On
     private void showGlobalOpacityDialog() {
         if (profile == null) return;
         ContentDialog dialog = new ContentDialog(this);
-        dialog.setTitle("Global Controls Opacity");
+        dialog.setTitle("Global عناصر التحكم الشفافية");
         dialog.setIcon(R.drawable.icon_opacity);
 
         FrameLayout frameLayout = dialog.findViewById(R.id.FrameLayout);

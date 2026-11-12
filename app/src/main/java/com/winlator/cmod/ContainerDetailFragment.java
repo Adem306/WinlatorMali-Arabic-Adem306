@@ -215,7 +215,7 @@ public class ContainerDetailFragment extends Fragment {
                         openDirectoryCallback.call(path);
                     }
                 } else {
-                    Toast.makeText(getContext(), "Invalid directory selected", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Invalid directory المحدد", Toast.LENGTH_SHORT).show();
                 }
             }
             openDirectoryCallback = null;
@@ -253,7 +253,7 @@ public class ContainerDetailFragment extends Fragment {
 
         view.findViewById(R.id.BTHelpRamBooster).setOnClickListener(v -> {
             ContentDialog dialog = new ContentDialog(getContext(), R.layout.bcn_info_dialog);
-            dialog.setTitle("RAM Booster (LMK Trigger)");
+            dialog.setTitle("معزز ذاكرة RAM (مُشغّل LMK)");
             dialog.setIcon(R.drawable.ic_driver_info);
 
             TextView tvMessage = dialog.findViewById(R.id.TVInfoMessage);

@@ -98,7 +98,7 @@ public class LogManagerFragment extends Fragment {
         surface = ThemeManager.getSurfaceColor(context);
         content = view.findViewById(R.id.LLLogContent);
         if (getActivity() instanceof AppCompatActivity && ((AppCompatActivity) getActivity()).getSupportActionBar() != null)
-            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Log Manager");
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Log مدير");
         build();
 
         String game = getArguments() != null ? getArguments().getString(ARG_GAME) : null;

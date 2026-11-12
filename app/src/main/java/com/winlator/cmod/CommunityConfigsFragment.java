@@ -116,12 +116,12 @@ public class CommunityConfigsFragment extends Fragment {
     private void loadGames() {
         if (!isNetworkAvailable()) {
             progressBar.setVisibility(View.GONE);
-            tvEmptyText.setText("No internet connection.\nPlease check your network settings.");
+            tvEmptyText.setText("لا internet connection.\nPlease check your network الإعدادات.");
             llEmptyState.setVisibility(View.VISIBLE);
             return;
         }
 
-        tvEmptyText.setText("Loading games...");
+        tvEmptyText.setText("جارٍ التحميل games...");
         llEmptyState.setVisibility(View.VISIBLE);
         progressBar.setVisibility(View.VISIBLE);
         CommunityConfigManager.fetchGameList((games, maintenance) -> {
@@ -141,12 +141,12 @@ public class CommunityConfigsFragment extends Fragment {
                 } else if (games != null && games.length() == 0) {
                     fullGameList = games;
                     recyclerView.setAdapter(null);
-                    tvEmptyText.setText("No community configurations shared yet.\nBe the first to share your config from the Shortcuts menu!");
+                    tvEmptyText.setText("لا community configurations shared yet.\nBe the first إلى مشاركة your config from the الاختصارات القائمة!");
                     llEmptyState.setVisibility(View.VISIBLE);
                 } else {
                     fullGameList = null;
                     recyclerView.setAdapter(null);
-                    tvEmptyText.setText("Failed to retrieve games list.\nPlease check your connection or server status.");
+                    tvEmptyText.setText("فشل إلى retrieve games list.\nPlease check your connection or server status.");
                     llEmptyState.setVisibility(View.VISIBLE);
                 }
             });
@@ -229,7 +229,7 @@ public class CommunityConfigsFragment extends Fragment {
                 activity.runOnUiThread(() -> {
                     activity.preloaderDialog.close();
                     if (all.length() > 0) showConfigSelectionDialog(ids.get(0), all);
-                    else Toast.makeText(getContext(), "No configurations found for this game.", Toast.LENGTH_SHORT).show();
+                    else Toast.makeText(getContext(), "لا configurations found for هذا اللعبة.", Toast.LENGTH_SHORT).show();
                 });
             });
         }
@@ -248,7 +248,7 @@ public class CommunityConfigsFragment extends Fragment {
                     if (configs.length() > 0) {
                         showConfigSelectionDialog(gameName, configs);
                     } else {
-                        Toast.makeText(getContext(), "No configurations found for this game.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "لا configurations found for هذا اللعبة.", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     ContentDialog.alert(getContext(), "Failed to fetch configurations. Please check your network connection.", null);
@@ -260,7 +260,7 @@ public class CommunityConfigsFragment extends Fragment {
     private void showConfigSelectionDialog(String gameName, JSONArray configs) {
         ContentDialog dialog = new ContentDialog(getContext());
         dialog.getContentView().findViewById(R.id.BTConfirm).setVisibility(View.GONE);
-        dialog.setTitle("Select Config");
+        dialog.setTitle("اختيار Config");
 
         ListView listView = dialog.findViewById(R.id.ListView);
         listView.getLayoutParams().width = com.winlator.cmod.core.AppUtils.getPreferredDialogWidth(getContext());
@@ -291,7 +291,7 @@ public class CommunityConfigsFragment extends Fragment {
 
     private void showConfigDetailsDialog(String gameName, JSONObject configRef) {
         ContentDialog dialog = new ContentDialog(getContext(), R.layout.community_config_details_dialog);
-        dialog.setTitle("Configuration Details");
+        dialog.setTitle("الإعدادات التفاصيل");
         
         try {
             String title = configRef.optString("config_title", "");
@@ -436,7 +436,7 @@ public class CommunityConfigsFragment extends Fragment {
                 } catch (JSONException e) {}
             });
             
-            ((TextView)dialog.findViewById(R.id.BTConfirm)).setText("IMPORT");
+            ((TextView)dialog.findViewById(R.id.BTConfirm)).setText("استيراد");
             dialog.show();
             
         } catch (Exception e) {}
@@ -584,7 +584,7 @@ public class CommunityConfigsFragment extends Fragment {
                             "Please download <b>" + requiredWine + "</b> from Contents to use this setup.";
                     dialog.setMessage(msg);
                     TextView btConfirm = dialog.findViewById(R.id.BTConfirm);
-                    btConfirm.setText("DOWNLOAD");
+                    btConfirm.setText("تنزيل");
                     dialog.setOnConfirmCallback(() -> {
                         WineDownloader.showDownloadDialog(activity, () -> {
                             checkWineAndConfirmImport(activity, root, notes);
@@ -613,11 +613,11 @@ public class CommunityConfigsFragment extends Fragment {
 
                     int padH = (int) com.winlator.cmod.core.UnitUtils.dpToPx(12);
                     TextView btConfirm = dialog.findViewById(R.id.BTConfirm);
-                    btConfirm.setText("DOWNLOAD");
+                    btConfirm.setText("تنزيل");
                     btConfirm.setPadding(padH, 0, padH, 0);
 
                     TextView btCancel = dialog.findViewById(R.id.BTCancel);
-                    btCancel.setText("USE INSTALLED");
+                    btCancel.setText("استخدام مثبت");
                     btCancel.setPadding(padH, 0, padH, 0);
 
                     dialog.setOnConfirmCallback(() -> {
@@ -654,7 +654,7 @@ public class CommunityConfigsFragment extends Fragment {
                 }
 
                 ContentDialog dialog = new ContentDialog(activity);
-                dialog.setTitle("Import Configuration");
+                dialog.setTitle("استيراد الإعدادات");
                 dialog.setMessage(confirmMsg);
                 dialog.setOnConfirmCallback(() -> executeImport(activity, root));
                 dialog.show();
@@ -688,10 +688,10 @@ public class CommunityConfigsFragment extends Fragment {
                                 "3. Find your game EXE in Drive D: and play!";
                         ContentDialog.alert(getContext(), message, null);
                     } catch (Exception e) {
-                        Toast.makeText(getContext(), "Imported with minor errors.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Imported مع minor errors.", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(getContext(), "Import failed.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), "استيراد فشل.", Toast.LENGTH_LONG).show();
                 }
             });
         });

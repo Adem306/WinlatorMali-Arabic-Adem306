@@ -264,9 +264,9 @@ public class ShortcutsFragment extends Fragment {
                 android.graphics.Bitmap bitmap = android.provider.MediaStore.Images.Media.getBitmap(requireContext().getContentResolver(), selectedImage);
                 currentShortcut.saveCustomCoverArt(bitmap);
                 loadShortcutsList();
-                Toast.makeText(getContext(), "Cover art updated.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Cover art محدث.", Toast.LENGTH_SHORT).show();
             } catch (Exception e) {
-                Toast.makeText(getContext(), "Failed to update cover art.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "فشل إلى update cover art.", Toast.LENGTH_SHORT).show();
             }
         } else if (requestCode == REQUEST_CODE_CUSTOM_HERO_ART && resultCode == Activity.RESULT_OK && data != null && currentShortcut != null) {
             Uri selectedImage = data.getData();
@@ -274,9 +274,9 @@ public class ShortcutsFragment extends Fragment {
                 android.graphics.Bitmap bitmap = android.provider.MediaStore.Images.Media.getBitmap(requireContext().getContentResolver(), selectedImage);
                 currentShortcut.saveCustomHeroArt(bitmap);
                 loadShortcutsList();
-                Toast.makeText(getContext(), "Loading screen art updated.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "جارٍ التحميل screen art محدث.", Toast.LENGTH_SHORT).show();
             } catch (Exception e) {
-                Toast.makeText(getContext(), "Failed to update loading screen art.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "فشل إلى update جارٍ التحميل screen art.", Toast.LENGTH_SHORT).show();
             }
         } else if (requestCode == REQUEST_CODE_IMPORT_SHORTCUT && resultCode == Activity.RESULT_OK && data != null) {
             Uri uri = data.getData();
@@ -325,7 +325,7 @@ public class ShortcutsFragment extends Fragment {
         try {
             startActivityForResult(Intent.createChooser(intent, "Select .desktop shortcut file"), REQUEST_CODE_IMPORT_SHORTCUT);
         } catch (Exception e) {
-            Toast.makeText(getContext(), "No file browser found.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "لا الملف browser found.", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -362,7 +362,7 @@ public class ShortcutsFragment extends Fragment {
 
             copyDesktopFileToContainer(tempFile, containers);
         } catch (Exception e) {
-            Toast.makeText(context, "Failed to read shortcut file: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "فشل إلى read shortcut الملف: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -395,7 +395,7 @@ public class ShortcutsFragment extends Fragment {
             Toast.makeText(context, "Shortcut '" + sourceFile.getName().replace(".desktop", "") + "' imported into " + targetContainer.getName(), Toast.LENGTH_LONG).show();
             loadShortcutsList();
         } else {
-            Toast.makeText(context, "Failed to import shortcut into container.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "فشل إلى استيراد shortcut into الحاوية.", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -501,7 +501,7 @@ public class ShortcutsFragment extends Fragment {
                     tv.setText(R.string.no_items_to_display);
                     tv.setVisibility(View.VISIBLE);
                 } else if (data.isEmpty()) {
-                    tv.setText("No matching shortcuts found");
+                    tv.setText("لا matching الاختصارات found");
                     tv.setVisibility(View.VISIBLE);
                 } else {
                     tv.setVisibility(View.GONE);
@@ -647,7 +647,7 @@ public class ShortcutsFragment extends Fragment {
                             loadShortcutsList();
                             Toast.makeText(context, "Shortcut removed successfully.", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(context, "Failed to remove the shortcut.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "فشل إلى إزالة the shortcut.", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
@@ -657,7 +657,7 @@ public class ShortcutsFragment extends Fragment {
                             Toast.makeText(context, "Shortcut cloned successfully.", Toast.LENGTH_SHORT).show();
                             loadShortcutsList();
                         } else {
-                            Toast.makeText(context, "Failed to clone shortcut.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "فشل إلى clone shortcut.", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
@@ -699,7 +699,7 @@ public class ShortcutsFragment extends Fragment {
                         else if (index == 2) {
                             shortcut.removeCustomCoverArt();
                             loadShortcutsList();
-                            Toast.makeText(context, "Cover art reset.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Cover art إعادة ضبط.", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
@@ -717,7 +717,7 @@ public class ShortcutsFragment extends Fragment {
                         else if (index == 2) {
                             shortcut.removeCustomHeroArt();
                             loadShortcutsList();
-                            Toast.makeText(context, "Loading screen art reset.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "جارٍ التحميل screen art إعادة ضبط.", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
@@ -748,9 +748,9 @@ public class ShortcutsFragment extends Fragment {
             if (!exportDir.exists()) exportDir.mkdirs();
             File exportFile = new File(exportDir, shortcut.file.getName());
             if (FileUtils.copy(shortcut.file, exportFile)) {
-                Toast.makeText(getContext(), "Shortcut exported to " + exportFile.getPath(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "Shortcut exported إلى " + exportFile.getPath(), Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(getContext(), "Failed to export shortcut.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "فشل إلى تصدير shortcut.", Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -771,10 +771,10 @@ public class ShortcutsFragment extends Fragment {
             // Step 1: If it's already tagged with a Steam ID, ask to confirm
             if (!steamId.isEmpty()) {
                 ContentDialog dialog = new ContentDialog(context);
-                dialog.setTitle("Confirm Game Info");
+                dialog.setTitle("تأكيد Game المعلومات");
                 dialog.setMessage("This configuration is tagged as:\n\n<b>" + currentName + "</b>\n\nIs this correct for the community?");
                 ((TextView)dialog.findViewById(R.id.BTConfirm)).setText("YES");
-                ((TextView)dialog.findViewById(R.id.BTCancel)).setText("NO, SEARCH");
+                ((TextView)dialog.findViewById(R.id.BTCancel)).setText("لا, بحث");
                 dialog.setOnConfirmCallback(() -> performCommunityUpload(shortcut, currentName, steamId, communityImage));
                 dialog.setOnCancelCallback(() -> {
                     showCommunitySearchPrompt(shortcut, currentName);
@@ -814,10 +814,10 @@ public class ShortcutsFragment extends Fragment {
                             final String finalSuggestedName = cleanGameName(currentName, pcgwName);
                             
                             ContentDialog dialog = new ContentDialog(context);
-                            dialog.setTitle("Confirm Game Info");
+                            dialog.setTitle("تأكيد Game المعلومات");
                             dialog.setMessage("Identified via EXE:\n\n<b>" + finalSuggestedName + "</b>\n\nIs this correct?");
                             ((TextView)dialog.findViewById(R.id.BTConfirm)).setText("YES");
-                            ((TextView)dialog.findViewById(R.id.BTCancel)).setText("NO, SEARCH");
+                            ((TextView)dialog.findViewById(R.id.BTCancel)).setText("لا, بحث");
                             dialog.setOnConfirmCallback(() -> searchGameForSharing(shortcut, finalSuggestedName, true));
                             dialog.setOnCancelCallback(() -> {
                                 showCommunitySearchPrompt(shortcut, currentName);
@@ -866,10 +866,10 @@ public class ShortcutsFragment extends Fragment {
                         final String finalSuggestedName = suggestedName;
 
                         ContentDialog dialog = new ContentDialog(context);
-                        dialog.setTitle("Confirm Game Info");
+                        dialog.setTitle("تأكيد Game المعلومات");
                         dialog.setMessage("Is this configuration for:\n\n<b>" + finalSuggestedName + "</b>?");
                         ((TextView)dialog.findViewById(R.id.BTConfirm)).setText("YES");
-                        ((TextView)dialog.findViewById(R.id.BTCancel)).setText("NO, SEARCH");
+                        ((TextView)dialog.findViewById(R.id.BTCancel)).setText("لا, بحث");
                         dialog.setOnConfirmCallback(() -> searchGameForSharing(shortcut, finalSuggestedName, true));
                         dialog.setOnCancelCallback(() -> {
                             showCommunitySearchPrompt(shortcut, currentName);
@@ -919,7 +919,7 @@ public class ShortcutsFragment extends Fragment {
                 if (!query.isEmpty()) {
                     searchGameForSharing(shortcut, query, false);
                 } else {
-                    Toast.makeText(context, "Please enter a game name", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Please enter a اللعبة الاسم", Toast.LENGTH_SHORT).show();
                 }
             });
             dialog.show();
@@ -961,7 +961,7 @@ public class ShortcutsFragment extends Fragment {
                     } else {
                         Activity activity = getActivity();
                         if (activity != null) activity.runOnUiThread(() -> {
-                            Toast.makeText(context, "No games found on SteamGridDB. Uploading with current info.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "لا games found on SteamGridDB. Uploading مع الحالي المعلومات.", Toast.LENGTH_SHORT).show();
                             performCommunityUpload(shortcut, shortcut.name, "", "");
                         });
                     }
@@ -1077,7 +1077,7 @@ public class ShortcutsFragment extends Fragment {
             if (context == null) return;
 
             ContentDialog dialog = new ContentDialog(context, R.layout.shortcut_properties_dialog);
-            dialog.setTitle("Properties");
+            dialog.setTitle("خصائص");
             dialog.setIcon(R.drawable.ic_nav_info);
 
             View cancelBtn = dialog.findViewById(R.id.BTCancel);
@@ -1146,7 +1146,7 @@ public class ShortcutsFragment extends Fragment {
                     playtimePrefs.edit().remove(playtimeKey).remove(playCountKey).apply();
                     if (tvPlayCount != null) tvPlayCount.setText("Number of times played: 0");
                     if (tvPlaytime != null) tvPlaytime.setText("Playtime: 0d 00h 00m 00s");
-                    Toast.makeText(context, "Properties reset", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "الخصائص إعادة ضبط", Toast.LENGTH_SHORT).show();
                 });
             }
 

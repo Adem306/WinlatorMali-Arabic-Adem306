@@ -106,7 +106,7 @@ public class ContainersFragment extends Fragment {
         ArrayList<Container> containers = manager.getContainers();
         recyclerView.setAdapter(new ContainersAdapter(containers));
         if (containers.isEmpty()) {
-            emptyTextView.setText("No containers yet\n\nTap + above to create one");
+            emptyTextView.setText("لا الحاويات yet\n\nTap + above إلى create one");
             emptyTextView.setTextSize(16);
             if (getContext() != null) emptyTextView.setTextColor((ThemeManager.getOnSurfaceTextColor(getContext()) & 0x00FFFFFF) | 0xB3000000);
             emptyTextView.setVisibility(View.VISIBLE);
@@ -141,7 +141,7 @@ public class ContainersFragment extends Fragment {
                 if (installed.isEmpty()) {
                     new AlertDialog.Builder(getContext())
                         .setTitle("Wine Runtime Required")
-                        .setMessage("No Wine or Proton runtimes are installed yet.\n\nWould you like to download Proton 10 arm64ec (Recommended) now?")
+                        .setMessage("لا Wine or Proton runtimes هل مثبت yet.\n\nWould أنت like إلى تنزيل Proton 10 arm64ec (Recommended) now?")
                         .setPositiveButton("Download Runtime", (dialog, which) -> {
                             com.winlator.cmod.contents.WineDownloader.showDownloadDialog(getActivity(), () -> {
                                 FragmentManager fm = getParentFragmentManager();
