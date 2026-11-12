@@ -138,8 +138,8 @@ public class WineDownloader {
         String defaultTitle = "Proton 10.0-4 arm64ec (" + (isModern ? "SDK 35" : "SDK 28") + ")";
 
         AlertDialog.Builder builder = new AlertDialog.Builder(activity)
-            .setTitle("Welcome to Winlator Mali")
-            .setMessage("No Wine or Proton runtimes are installed yet.\n\nTo run Windows games with highest performance, download the official Proton 10 runtime:")
+            .setTitle("Welcome إلى Winlator Mali")
+            .setMessage("لا Wine or Proton runtimes هل مثبت yet.\n\nTo تشغيل Windows games مع highest الأداء, تنزيل the official Proton 10 runtime:")
             .setPositiveButton("Download " + defaultTitle, (dialog, which) -> {
                 sActiveWelcomeDialog = null;
                 showDownloadDialog(activity, null);
@@ -217,7 +217,7 @@ public class WineDownloader {
                 pbLoading.setVisibility(View.GONE);
                 List<String> installed = getInstalledWineVersions(activity);
                 if (installed.isEmpty()) {
-                    tvEmptyList.setText("No Wine or Proton runtimes installed.");
+                    tvEmptyList.setText("لم يتم تثبيت أي بيئات تشغيل لـWine أو Proton.");
                     tvEmptyList.setVisibility(View.VISIBLE);
                     lvWineList.setVisibility(View.GONE);
                 } else {
@@ -226,7 +226,7 @@ public class WineDownloader {
                     InstalledWineAdapter installedAdapter = new InstalledWineAdapter(activity, installed, (verName) -> {
                         new AlertDialog.Builder(activity)
                             .setTitle("Delete " + verName + "?")
-                            .setMessage("Are you sure you want to remove this runtime from Winlator Mali?")
+                            .setMessage("هل أنت متأكد أنت تريد إلى إزالة هذا runtime from Winlator Mali?")
                             .setPositiveButton("Delete", (d, w) -> {
                                 deleteWineVersion(activity, verName);
                                 AppUtils.showToast(activity, verName + " removed.");
@@ -250,7 +250,7 @@ public class WineDownloader {
                     activity.runOnUiThread(() -> {
                         pbLoading.setVisibility(View.GONE);
                         if (wineItems.isEmpty()) {
-                            tvEmptyList.setText("No Wine or Proton packages found in this source.");
+                            tvEmptyList.setText("لم يتم العثور على حزم Wine أو Proton في هذا المصدر.");
                             tvEmptyList.setVisibility(View.VISIBLE);
                             lvWineList.setVisibility(View.GONE);
                         } else {
@@ -286,8 +286,8 @@ public class WineDownloader {
                     input.setHint("https://example.com/contents.json");
                     input.setText(saved);
                     new AlertDialog.Builder(activity)
-                        .setTitle("Custom Catalog URL")
-                        .setMessage("Enter the URL to a contents.json repository:")
+                        .setTitle("مخصص Catalog URL")
+                        .setMessage("Enter the URL إلى a contents.json repository:")
                         .setView(input)
                         .setPositiveButton("Load", (d, w) -> {
                             String custom = input.getText().toString().trim();
@@ -328,7 +328,7 @@ public class WineDownloader {
         tvProgressTitle.setText("Downloading " + title);
         pbDownload.setIndeterminate(false);
         pbDownload.setProgress(0);
-        tvProgressStatus.setText("Connecting to repository...");
+        tvProgressStatus.setText("جارٍ الاتصال بالمستودع…");
         tvProgressPercent.setText("0%");
 
         Executors.newSingleThreadExecutor().execute(() -> {
@@ -353,7 +353,7 @@ public class WineDownloader {
                 if (patternUrl != null && !patternUrl.isEmpty()) {
                     activity.runOnUiThread(() -> {
                         tvProgressTitle.setText("Downloading container pattern for " + title);
-                        tvProgressStatus.setText("Connecting to pattern archive...");
+                        tvProgressStatus.setText("Connecting إلى pattern archive...");
                         pbDownload.setProgress(0);
                         tvProgressPercent.setText("0%");
                     });
@@ -375,7 +375,7 @@ public class WineDownloader {
                 activity.runOnUiThread(() -> {
                     pbDownload.setIndeterminate(true);
                     tvProgressTitle.setText("Installing " + title);
-                    tvProgressStatus.setText("Extracting & registering runtime packages...");
+                    tvProgressStatus.setText("جارٍ الاستخراج & registering runtime packages...");
                 });
 
                 ContentsManager contentsManager = new ContentsManager(activity);
@@ -605,7 +605,7 @@ public class WineDownloader {
             }
 
             if (isInstalled) {
-                btAction.setText("Installed");
+                btAction.setText("مثبت");
                 btAction.setEnabled(false);
                 btAction.setAlpha(0.5f);
             } else {
@@ -650,7 +650,7 @@ public class WineDownloader {
             ImageButton btDelete = convertView.findViewById(R.id.BTWineItemDelete);
 
             tvTitle.setText(verName);
-            tvSub.setText("Active runtime in imagefs/opt or contents folder");
+            tvSub.setText("Active runtime in imagefs/opt or contents المجلد");
 
             btAction.setVisibility(View.GONE);
             btDelete.setVisibility(View.VISIBLE);
