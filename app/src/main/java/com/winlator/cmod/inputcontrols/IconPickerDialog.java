@@ -33,7 +33,7 @@ public class IconPickerDialog {
 
     public static void show(Context context, int currentIconId, OnIconSelectedCallback callback) {
         ContentDialog dialog = new ContentDialog(context);
-        dialog.setTitle("Select Icon");
+        dialog.setTitle("اختيار أيقونة");
         dialog.setIcon(R.drawable.icon_radial_wheel);
 
         FrameLayout frameLayout = dialog.findViewById(R.id.FrameLayout);
@@ -58,7 +58,7 @@ public class IconPickerDialog {
         boolean isDarkMode = preferences.getBoolean("dark_mode", true);
 
         Button btNoIcon = new Button(context);
-        btNoIcon.setText("None (Text Only)");
+        btNoIcon.setText("لا شيء (نص Only)");
         btNoIcon.setTextSize(11);
         btNoIcon.setTextColor(isDarkMode ? android.graphics.Color.WHITE : android.graphics.Color.BLACK);
         LinearLayout.LayoutParams btnParams = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f);
