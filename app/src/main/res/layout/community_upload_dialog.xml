@@ -18,7 +18,7 @@
         android:id="@+id/ETConfigTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter custom title"
+        android:hint="Enter مخصص title"
         android:maxLines="1"
         android:inputType="textCapWords"
         android:layout_marginBottom="16dp"/>
@@ -36,7 +36,7 @@
         android:id="@+id/ETConfigNotes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Add details about drivers, etc."
+        android:hint="إضافة التفاصيل حول برامج التشغيل, etc."
         android:minLines="3"
         android:gravity="top"
         android:inputType="textMultiLine"/>

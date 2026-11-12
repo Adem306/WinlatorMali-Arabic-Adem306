@@ -33,12 +33,12 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/wine_configuration" />
+                android:text="@string/Wine_الإعدادات" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/win_components" />
+                android:text="@string/win_المكونات" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
@@ -48,12 +48,12 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/drives" />
+                android:text="@string/محركات الأقراص" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/advanced" />
+                android:text="@string/متقدم" />
 
         </com.google.android.material.tabs.TabLayout>
 
@@ -85,7 +85,7 @@
                         android:tag="section_header"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="General &amp; Display"
+                        android:text="General &amp; الشاشة"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -102,7 +102,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/name"
+                            android:text="@string/الاسم"
                             android:textSize="13sp"
                             android:layout_marginBottom="4dp" />
 
@@ -117,7 +117,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/screen_size"
+                            android:text="@string/screen_الحجم"
                             android:textSize="13sp"
                             android:layout_marginBottom="4dp" />
 
@@ -187,7 +187,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/wine_version"
+                                android:text="@string/Wine_الإصدار"
                                 android:textSize="13sp"
                                 android:layout_marginBottom="4dp" />
 
@@ -213,7 +213,7 @@
                                     android:padding="6dp"
                                     app:tint="?attr/colorAccent"
                                     android:src="@drawable/icon_download"
-                                    android:contentDescription="Download Wine" />
+                                    android:contentDescription="تنزيل Wine" />
                             </LinearLayout>
                         </LinearLayout>
 
@@ -221,7 +221,7 @@
                             android:id="@+id/CBShowFPS"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/show_fps"
+                            android:text="@string/إظهار_fps"
                             android:textSize="14sp"
                             android:layout_marginBottom="4dp" />
 
@@ -229,7 +229,7 @@
                             android:id="@+id/CBFullscreenStretched"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/fullscreen_stretched"
+                            android:text="@string/ملء الشاشة_stretched"
                             android:visibility="gone"
                             android:textSize="14sp" />
 
@@ -242,7 +242,7 @@
                         android:tag="section_header"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Graphics &amp; Rendering"
+                        android:text="الرسومات &amp; التصيير"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -259,7 +259,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/graphics_driver"
+                            android:text="@string/الرسومات_برنامج التشغيل"
                             android:textSize="13sp"
                             android:layout_marginBottom="4dp" />
 
@@ -341,7 +341,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/bcn_layer_configuration"
+                            android:text="@string/bcn_layer_الإعدادات"
                             android:textSize="13sp"
                             android:layout_marginBottom="4dp" />
 
@@ -383,7 +383,7 @@
                         android:tag="section_header"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="System &amp; Audio"
+                        android:text="النظام &amp; Audio"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -400,7 +400,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/audio_driver"
+                            android:text="@string/audio_برنامج التشغيل"
                             android:textSize="13sp"
                             android:layout_marginBottom="4dp" />
 
@@ -511,7 +511,7 @@
                         android:tag="section_header"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/desktop"
+                        android:text="@string/سطح المكتب"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -599,7 +599,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/mouse_warp_override"
+                            android:text="@string/الفأرة_warp_override"
                             android:textSize="13sp"
                             android:layout_marginBottom="4dp" />
 
@@ -693,7 +693,7 @@
                             android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="@string/add" />
+                            android:text="@string/إضافة" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -731,7 +731,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/target_path"
+                                android:text="@string/الهدف_المسار"
                                 android:textStyle="bold"
                                 android:textSize="13sp" />
                         </LinearLayout>
@@ -747,7 +747,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="@string/no_items_to_display"
+                            android:text="@string/لا_عناصر_إلى_عرض"
                             android:padding="16dp"
                             android:visibility="gone" />
 
@@ -759,7 +759,7 @@
                             android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="@string/add" />
+                            android:text="@string/إضافة" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -806,7 +806,7 @@
                                     android:id="@+id/TVBox64VersionLabel"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/box64_version"
+                                    android:text="@string/box64_الإصدار"
                                     android:textSize="13sp"
                                     android:layout_marginBottom="4dp" />
 
@@ -822,7 +822,7 @@
                                     android:id="@+id/TVBox64PresetLabel"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/box64_preset"
+                                    android:text="@string/box64_إعداد مسبق"
                                     android:textSize="13sp"
                                     android:layout_marginBottom="4dp" />
 
@@ -868,7 +868,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/fexcore_version"
+                                    android:text="@string/fexcore_الإصدار"
                                     android:textSize="13sp"
                                     android:layout_marginBottom="4dp" />
 
@@ -882,7 +882,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/fexcore_preset"
+                                    android:text="@string/fexcore_إعداد مسبق"
                                     android:textSize="13sp"
                                     android:layout_marginBottom="4dp" />
 
@@ -922,7 +922,7 @@
                             app:tint="?android:attr/textColorSecondary"
                             android:background="?android:attr/selectableItemBackgroundBorderless"
                             android:padding="4dp"
-                            android:contentDescription="Info" />
+                            android:contentDescription="المعلومات" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -937,7 +937,7 @@
                             android:id="@+id/CBRamBooster"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/enable_ram_booster"
+                            android:text="@string/تمكين_ram_booster"
                             android:textSize="14sp"
                             android:layout_marginBottom="8dp" />
 
@@ -945,14 +945,14 @@
                             android:id="@+id/CBRamBoosterToast"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/enable_ram_booster_toast"
+                            android:text="@string/تمكين_ram_booster_toast"
                             android:textSize="14sp"
                             android:layout_marginBottom="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/booster_profile"
+                            android:text="@string/booster_ملف التعريف"
                             android:textSize="13sp"
                             android:layout_marginBottom="4dp" />
 
@@ -1100,7 +1100,7 @@
                         android:tag="section_header"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/system"
+                        android:text="@string/النظام"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -1134,7 +1134,7 @@
                         android:tag="section_header"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/processor_affinity"
+                        android:text="@string/المعالج_تقارب"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -1151,7 +1151,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="64-bit Affinity"
+                            android:text="64-bit تقارب"
                             android:textSize="13sp"
                             android:layout_marginBottom="6dp" />
 
@@ -1165,7 +1165,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/processor_affinity_32_bit_apps"
+                            android:text="@string/المعالج_تقارب_32_bit_apps"
                             android:textSize="13sp"
                             android:layout_marginBottom="6dp" />
 

@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
+        android:text="@string/الاسم"
         android:textSize="13sp"
         android:textStyle="bold"
         android:layout_marginBottom="4dp" />
@@ -25,7 +25,7 @@
             android:layout_height="42dp"
             android:layout_weight="1"
             android:id="@+id/ETName"
-            android:hint="VARIABLE_NAME"
+            android:hint="VARIABLE_الاسم"
             android:singleLine="true" />
 
         <ImageButton
@@ -35,13 +35,13 @@
             android:layout_marginStart="8dp"
             android:id="@+id/BTMenu"
             android:src="@drawable/icon_menu"
-            android:contentDescription="Select predefined variable" />
+            android:contentDescription="اختيار predefined variable" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/value"
+        android:text="@string/القيمة"
         android:textSize="13sp"
         android:textStyle="bold"
         android:layout_marginTop="12dp"
@@ -52,6 +52,6 @@
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:id="@+id/ETValue"
-        android:hint="Value"
+        android:hint="القيمة"
         android:singleLine="true" />
 </LinearLayout>

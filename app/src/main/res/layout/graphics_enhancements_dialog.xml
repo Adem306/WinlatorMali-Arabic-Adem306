@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Color Preset"
+                android:text="Color إعداد مسبق"
                 android:textStyle="bold"
                 android:textSize="13sp"
                 android:layout_marginBottom="6dp" />
@@ -90,7 +90,7 @@
                 android:textColor="?android:attr/textColorSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Scales the container resolution to your screen. SGSR and FSR give the sharpest result."
+                android:text="Scales the الحاوية resolution إلى your screen. SGSR and FSR give the sharpest result."
                 android:layout_marginBottom="8dp" />
 
             <Spinner
@@ -131,14 +131,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Fit game window to screen" />
+                android:text="Fit اللعبة window إلى screen" />
 
             <TextView
                 android:textSize="11sp"
                 android:textColor="?android:attr/textColorSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upscales a game running smaller than the container (e.g. 800x600 on 1280x720) straight to your screen with the selected upscaler, keeping its aspect ratio." />
+                android:text="Upscales a اللعبة running smaller than the الحاوية (e.g. 800x600 on 1280x720) straight إلى your screen مع the المحدد upscaler, keeping its aspect ratio." />
         </LinearLayout>
 
         <!-- ============================================================ -->
@@ -219,7 +219,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Advanced (Color &amp; Effects)"
+                    android:text="متقدم (Color &amp; Effects)"
                     android:textStyle="bold"
                     android:textSize="13sp" />
 
@@ -339,7 +339,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="FPS Limiter"
+                    android:text="معدل الإطارات Limiter"
                     android:textStyle="bold"
                     android:textSize="13sp" />
 
@@ -350,7 +350,7 @@
                     android:padding="4dp"
                     android:src="@drawable/ic_driver_info"
                     android:background="?android:attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="Info"
+                    android:contentDescription="المعلومات"
                     app:tint="?android:attr/textColorSecondary" />
             </LinearLayout>
 
@@ -369,7 +369,7 @@
                 android:layout_height="42dp"
                 android:layout_marginTop="6dp"
                 android:inputType="number"
-                android:hint="Custom FPS limit (e.g. 40, 72, 144)"
+                android:hint="مخصص معدل الإطارات limit (e.g. 40, 72, 144)"
                 android:visibility="gone" />
         </LinearLayout>
 
@@ -406,7 +406,7 @@
                     android:padding="4dp"
                     android:src="@drawable/ic_driver_info"
                     android:background="?android:attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="Info"
+                    android:contentDescription="المعلومات"
                     app:tint="?android:attr/textColorSecondary" />
             </LinearLayout>
 
@@ -414,7 +414,7 @@
                 android:id="@+id/CBFrameGen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enable frame generation" />
+                android:text="تمكين frame generation" />
 
             <TextView
                 android:textSize="11sp"
@@ -457,7 +457,7 @@
             style="@style/ButtonNeutral"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save for This Game" />
+            android:text="حفظ for This Game" />
 
         <Button
             android:id="@+id/BTSaveAsDefault"
@@ -465,7 +465,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:text="Save as Container Default" />
+            android:text="حفظ as الحاوية افتراضي" />
 
         <Button
             android:id="@+id/BTResetEnhancements"
@@ -473,7 +473,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:text="@string/reset" />
+            android:text="@string/إعادة ضبط" />
 
         <View
             android:layout_width="match_parent"

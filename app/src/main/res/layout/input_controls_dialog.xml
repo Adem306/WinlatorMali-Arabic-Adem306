@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:checked="true"
-            android:text="@string/show_touchscreen_controls" />
+            android:text="@string/إظهار_touchscreen_عناصر التحكم" />
 
         <CheckBox
             android:id="@+id/CBEnableTimeout"
@@ -76,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="@string/enable_touchscreen_timeout"
+            android:text="@string/تمكين_touchscreen_timeout"
             android:checked="false" />
 
         <CheckBox
@@ -85,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="@string/enable_touchscreen_haptics"
+            android:text="@string/تمكين_touchscreen_haptics"
             android:checked="false" />
 
         <View
@@ -123,7 +123,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="12dp"
             android:paddingTop="8dp"
-            android:text="Simulation Target"
+            android:text="Simulation الهدف"
             android:textSize="14sp" />
 
         <Spinner
@@ -259,7 +259,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="4dp"
-                android:text="Reset" />
+                android:text="إعادة ضبط" />
         </LinearLayout>
 
     </LinearLayout>

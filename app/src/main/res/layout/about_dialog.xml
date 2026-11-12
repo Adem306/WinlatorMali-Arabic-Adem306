@@ -79,7 +79,7 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:textColor="?attr/colorAccent"
-            android:text="@string/credits_and_third_party_apps" />
+            android:text="@string/الاعتمادات_and_third_party_apps" />
 
         <TextView
             android:id="@+id/TVCreditsAndThirdPartyApps"
@@ -98,7 +98,7 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:textColor="?attr/colorAccent"
-            android:text="Open Source Licenses" />
+            android:text="فتح Source Licenses" />
 
         <TextView
             android:id="@+id/TVLicenses"

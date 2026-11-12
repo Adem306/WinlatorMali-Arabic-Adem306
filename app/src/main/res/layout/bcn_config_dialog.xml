@@ -25,7 +25,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/bcn_layer_configuration"
+                android:text="@string/bcn_layer_الإعدادات"
                 android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="?android:attr/textColorSecondary" />
@@ -38,7 +38,7 @@
                 app:tint="?android:attr/textColorSecondary"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:padding="4dp"
-                android:contentDescription="Info" />
+                android:contentDescription="المعلومات" />
         </LinearLayout>
 
         <LinearLayout
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="36dp"
-                android:text="@string/graphics_driver_bcn_enabled"
+                android:text="@string/الرسومات_برنامج التشغيل_bcn_مفعّل"
                 android:textSize="13sp" />
 
             <LinearLayout
@@ -76,7 +76,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/graphics_driver_bcn_emulation"
+                    android:text="@string/الرسومات_برنامج التشغيل_bcn_emulation"
                     android:textSize="12.5sp"
                     android:textColor="?android:attr/textColorSecondary"
                     android:layout_marginBottom="4dp" />
@@ -91,7 +91,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/graphics_driver_bcn_emulation_cache"
+                    android:text="@string/الرسومات_برنامج التشغيل_bcn_emulation_ذاكرة التخزين المؤقت"
                     android:textSize="12.5sp"
                     android:textColor="?android:attr/textColorSecondary"
                     android:layout_marginTop="8dp"
@@ -113,7 +113,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Layer version"
+                    android:text="Layer الإصدار"
                     android:textSize="12.5sp"
                     android:textColor="?android:attr/textColorSecondary"
                     android:layout_marginBottom="4dp" />
@@ -146,7 +146,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:minHeight="36dp"
-                        android:text="@string/graphics_driver_bcn_keep_raw"
+                        android:text="@string/الرسومات_برنامج التشغيل_bcn_keep_raw"
                         android:textSize="13sp" />
                 </LinearLayout>
 
@@ -162,7 +162,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Transcode to"
+                        android:text="Transcode إلى"
                         android:textSize="12.5sp"
                         android:textColor="?android:attr/textColorSecondary"
                         android:layout_marginBottom="4dp" />

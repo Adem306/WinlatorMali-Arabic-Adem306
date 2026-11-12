@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="?android:attr/textColorSecondary"
-                android:text="@string/type" />
+                android:text="@string/النوع" />
 
             <TextView
                 android:id="@+id/TVType"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="?android:attr/textColorSecondary"
-                android:text="@string/version" />
+                android:text="@string/الإصدار" />
 
             <TextView
                 android:id="@+id/TVVersion"
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="?android:attr/textColorSecondary"
-                android:text="@string/version_code" />
+                android:text="@string/الإصدار_code" />
 
             <TextView
                 android:id="@+id/TVVersionCode"
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="?android:attr/textColorSecondary"
-                android:text="Download Size" />
+                android:text="تنزيل الحجم" />
 
             <TextView
                 android:id="@+id/TVSize"
@@ -155,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="?android:attr/textColorSecondary"
-                android:text="Download URL" />
+                android:text="تنزيل URL" />
 
             <TextView
                 android:id="@+id/TVUrl"
@@ -179,7 +179,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="?android:attr/textColorSecondary"
-                android:text="@string/file_list" />
+                android:text="@string/الملف_list" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"

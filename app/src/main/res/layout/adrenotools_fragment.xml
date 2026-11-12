@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:text="Custom Vulkan drivers (Adrenotools .zip) you've installed. Pick one per container in its Graphics Driver settings."
+        android:text="مخصص Vulkan برامج التشغيل (Adrenotools .zip) you&#x27;ve مثبت. Pick one per الحاوية in its الرسومات برنامج التشغيل الإعدادات."
         android:textColor="?android:attr/textColorSecondary"
         android:textSize="12.5sp" />
 
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="No drivers installed yet.\nTap Install Drivers to add an Adrenotools .zip."
+            android:text="لا برامج التشغيل مثبت yet.\nTap تثبيت برامج التشغيل إلى إضافة an Adrenotools .zip."
             android:textColor="?android:attr/textColorSecondary"
             android:textSize="13sp"
             android:visibility="gone" />
@@ -44,5 +44,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="@string/install_drivers" />
+        android:text="@string/تثبيت_برامج التشغيل" />
 </LinearLayout>

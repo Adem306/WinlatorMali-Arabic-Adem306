@@ -11,7 +11,7 @@
         android:id="@+id/TVPickerTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/select_directory"
+        android:text="@string/اختيار_directory"
         android:textSize="18sp"
         android:paddingBottom="8dp"/>
 
@@ -20,7 +20,7 @@
         android:id="@+id/upButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/up_directory"
+        android:text="@string/أعلى_directory"
         android:enabled="true"/> <!-- Enabled by default -->
 
     <!-- RecyclerView to display files and directories -->
@@ -36,7 +36,7 @@
         android:id="@+id/confirmButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/confirm_selection"
+        android:text="@string/تأكيد_selection"
         android:enabled="false" /> <!-- Initially disabled until a directory is selected -->
 
 </LinearLayout>

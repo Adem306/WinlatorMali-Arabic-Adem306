@@ -31,7 +31,7 @@
                 android:textStyle="bold"
                 android:textSize="12sp"
                 android:textColor="#ffffff"
-                android:text="@string/profile" />
+                android:text="@string/ملف التعريف" />
 
             <TextView
                 android:id="@+id/TVProfileName"
@@ -46,19 +46,19 @@
         <ImageButton
             android:id="@+id/BTAddElement"
             style="@style/ToolButton"
-            android:contentDescription="Add Element"
+            android:contentDescription="إضافة Element"
             android:src="@drawable/icon_add" />
 
         <ImageButton
             android:id="@+id/BTRemoveElement"
             style="@style/ToolButton"
-            android:contentDescription="Remove Element"
+            android:contentDescription="إزالة Element"
             android:src="@drawable/icon_remove" />
 
         <ImageButton
             android:id="@+id/BTElementSettings"
             style="@style/ToolButton"
-            android:contentDescription="Element Settings"
+            android:contentDescription="Element الإعدادات"
             android:src="@drawable/icon_settings" />
 
         <ImageButton
@@ -72,13 +72,13 @@
         <ImageButton
             android:id="@+id/BTStylePreset"
             style="@style/ToolButton"
-            android:contentDescription="Style Preset"
+            android:contentDescription="Style إعداد مسبق"
             android:src="@drawable/icon_palette" />
 
         <ImageButton
             android:id="@+id/BTOpacity"
             style="@style/ToolButton"
-            android:contentDescription="Global Opacity"
+            android:contentDescription="Global الشفافية"
             android:src="@drawable/icon_opacity" />
 
         <View style="@style/VerticalLine" />
@@ -86,7 +86,7 @@
         <ImageButton
             android:id="@+id/BTReset"
             style="@style/ToolButton"
-            android:contentDescription="Reset Layout"
+            android:contentDescription="إعادة ضبط Layout"
             android:src="@drawable/icon_reset" />
 
         <ImageButton

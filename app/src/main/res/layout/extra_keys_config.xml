@@ -23,7 +23,7 @@
         tools:ignore="LabelFor" />
     <TextView
         android:id="@+id/extra_keys_config_description"
-        android:text="@string/extra_keys_config_desc"
+        android:text="@string/extra_المفاتيح_config_desc"
         android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="section_header"
-            android:text="@string/profile"
+            android:text="@string/ملف التعريف"
             android:textStyle="bold"
             android:textSize="14sp"
             android:textColor="?attr/colorAccent"
@@ -34,7 +34,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/select_profile"
+                android:text="@string/اختيار_ملف التعريف"
                 android:textStyle="bold"
                 android:textSize="13sp"
                 android:textColor="?android:attr/textColorSecondary"
@@ -66,7 +66,7 @@
                     android:scaleType="fitCenter"
                     app:tint="?attr/colorAccent"
                     android:src="@drawable/icon_add"
-                    android:contentDescription="New profile" />
+                    android:contentDescription="جديد ملف التعريف" />
 
                 <ImageButton
                     style="@style/ListMenuButton"
@@ -80,7 +80,7 @@
                     android:scaleType="fitCenter"
                     app:tint="?attr/colorAccent"
                     android:src="@drawable/icon_edit"
-                    android:contentDescription="Rename profile" />
+                    android:contentDescription="إعادة تسمية ملف التعريف" />
 
                 <ImageButton
                     style="@style/ListMenuButton"
@@ -94,7 +94,7 @@
                     android:scaleType="fitCenter"
                     app:tint="?attr/colorAccent"
                     android:src="@drawable/icon_duplicate"
-                    android:contentDescription="Duplicate profile" />
+                    android:contentDescription="تكرار ملف التعريف" />
 
                 <ImageButton
                     style="@style/ListMenuButton"
@@ -107,7 +107,7 @@
                     android:scaleType="fitCenter"
                     app:tint="?attr/colorAccent"
                     android:src="@drawable/icon_remove"
-                    android:contentDescription="Delete profile" />
+                    android:contentDescription="Delete ملف التعريف" />
             </LinearLayout>
 
             <!-- Overlay Opacity -->
@@ -122,7 +122,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/overlay_opacity"
+                    android:text="@string/overlay_الشفافية"
                     android:textStyle="bold"
                     android:textSize="13sp"
                     android:textColor="?android:attr/textColorSecondary" />
@@ -162,7 +162,7 @@
                 android:autoSizeTextType="uniform"
                 android:autoSizeMinTextSize="10sp"
                 android:autoSizeMaxTextSize="16sp"
-                android:text="Edit On-Screen Controls" />
+                android:text="تعديل On-Screen عناصر التحكم" />
 
             <Button
                 style="@style/ButtonNeutral"
@@ -192,7 +192,7 @@
                     android:autoSizeTextType="uniform"
                     android:autoSizeMinTextSize="10sp"
                     android:autoSizeMaxTextSize="16sp"
-                    android:text="@string/import_profile" />
+                    android:text="@string/استيراد_ملف التعريف" />
 
                 <Button
                     style="@style/ButtonNeutral"
@@ -205,7 +205,7 @@
                     android:autoSizeTextType="uniform"
                     android:autoSizeMinTextSize="10sp"
                     android:autoSizeMaxTextSize="16sp"
-                    android:text="@string/export_profile" />
+                    android:text="@string/تصدير_ملف التعريف" />
             </LinearLayout>
         </LinearLayout>
 
@@ -214,7 +214,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="section_header"
-            android:text="@string/external_controllers"
+            android:text="@string/خارجية_controllers"
             android:textStyle="bold"
             android:textSize="14sp"
             android:textColor="?attr/colorAccent"
@@ -240,7 +240,7 @@
                 android:layout_height="wrap_content"
                 android:paddingVertical="16dp"
                 android:gravity="center"
-                android:text="No controller connected.\nPlug in or pair a controller to set up its buttons."
+                android:text="لا controller متصل.\nPlug in or pair a controller إلى set أعلى its buttons."
                 android:textSize="13sp"
                 android:textColor="?android:attr/textColorSecondary"
                 android:visibility="gone" />

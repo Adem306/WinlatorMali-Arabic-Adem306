@@ -48,7 +48,7 @@
                             android:layout_marginStart="6dp"
                             android:src="@drawable/icon_add"
                             android:padding="4dp"
-                            android:contentDescription="Add Wheel"
+                            android:contentDescription="إضافة Wheel"
                             android:background="?selectableItemBackgroundBorderless"
                             app:tint="@color/colorAccent" />
 
@@ -59,7 +59,7 @@
                             android:layout_marginStart="4dp"
                             android:src="@drawable/icon_remove"
                             android:padding="4dp"
-                            android:contentDescription="Remove Wheel"
+                            android:contentDescription="إزالة Wheel"
                             android:background="?selectableItemBackgroundBorderless"
                             app:tint="@color/colorAccent" />
                     </LinearLayout>
@@ -85,14 +85,14 @@
                         android:id="@+id/CBEnableWheel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Enable This Radial Wheel"
+                        android:text="تمكين This Radial Wheel"
                         android:checked="true" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        android:text="Wheel Name"
+                        android:text="Wheel الاسم"
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
@@ -147,7 +147,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Wheel Icon Scale"
+                            android:text="Wheel أيقونة المقياس"
                             android:textSize="12sp"
                             android:textStyle="bold" />
                         <TextView
@@ -169,7 +169,7 @@
                 <TextView
                     android:id="@+id/TVPropertiesLabel"
                     style="@style/FieldSetLabel"
-                    android:text="Properties" />
+                    android:text="خصائص" />
             </FrameLayout>
 
             <!-- ── Wheel Slices ── -->

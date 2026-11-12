@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/vkd3d_version"
+            android:text="@string/vkd3d_الإصدار"
             android:textSize="13sp"
             android:textStyle="bold"
             android:textColor="?android:attr/textColorSecondary"
@@ -54,7 +54,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/dxvk_version"
+            android:text="@string/dxvk_الإصدار"
             android:textSize="13sp"
             android:textStyle="bold"
             android:textColor="?android:attr/textColorSecondary"
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="13sp"
-                android:text="Enable Pre-Configured DXVK Config" />
+                android:text="تمكين Pre-Configured DXVK Config" />
 
             <ImageView
                 android:id="@+id/BTHelpDxvkConfig"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="13sp"
-                android:text="@string/enabled_async" />
+                android:text="@string/مفعّل_async" />
 
             <ToggleButton
                 android:id="@+id/SWAsync"
@@ -154,7 +154,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="13sp"
-                android:text="@string/enabled_async_cache" />
+                android:text="@string/مفعّل_async_ذاكرة التخزين المؤقت" />
 
             <ToggleButton
                 android:id="@+id/SWAsyncCache"
@@ -188,7 +188,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/max_device_memory"
+            android:text="@string/max_device_الذاكرة"
             android:textSize="13sp"
             android:textStyle="bold"
             android:textColor="?android:attr/textColorSecondary"

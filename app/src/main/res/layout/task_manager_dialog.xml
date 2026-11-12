@@ -37,7 +37,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="@string/process_name"
+                    android:text="@string/عملية_الاسم"
                     android:textStyle="bold"
                     android:textSize="12sp"
                     android:textColor="?attr/colorAccent"
@@ -55,7 +55,7 @@
                 <TextView
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/memory"
+                    android:text="@string/الذاكرة"
                     android:textStyle="bold"
                     android:textSize="12sp"
                     android:gravity="end"
@@ -91,7 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="@string/no_items_to_display"
+                    android:text="@string/لا_عناصر_إلى_عرض"
                     android:textColor="?android:attr/textColorSecondary"
                     android:visibility="gone" />
             </FrameLayout>

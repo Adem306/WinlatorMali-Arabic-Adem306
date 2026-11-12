@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/content_type"
+                android:text="@string/content_النوع"
                 android:textSize="11sp"
                 android:textColor="?android:attr/textColorSecondary" />
 
@@ -78,7 +78,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sort Order"
+                android:text="فرز Order"
                 android:textSize="11sp"
                 android:textColor="?android:attr/textColorSecondary" />
 
@@ -96,7 +96,7 @@
             android:layout_height="38dp"
             android:padding="8dp"
             android:src="@drawable/ic_refresh"
-            android:contentDescription="Refresh Catalog" />
+            android:contentDescription="تحديث Catalog" />
 
     </LinearLayout>
 
@@ -124,7 +124,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="@string/no_items_to_display"
+        android:text="@string/لا_عناصر_إلى_عرض"
         android:textSize="18sp"
         android:visibility="gone" />
 
@@ -141,7 +141,7 @@
             style="@style/ButtonNeutral"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Install File" />
+            android:text="تثبيت ملف" />
 
     </LinearLayout>
 

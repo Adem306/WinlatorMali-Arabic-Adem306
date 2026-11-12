@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cache"
+                android:text="@string/ذاكرة التخزين المؤقت"
                 android:layout_marginTop="8dp" />
 
             <TextView
@@ -93,7 +93,7 @@
                 android:textSize="12dp"
                 android:layout_marginTop="8dp"
                 android:textColor="#bdbdbd"
-                android:text="@string/estimated_used_space" />
+                android:text="@string/المقدرة_المستخدمة_المساحة" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

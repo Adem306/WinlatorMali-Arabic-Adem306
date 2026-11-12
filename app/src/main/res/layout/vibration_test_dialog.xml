@@ -111,7 +111,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Test settings"
+            android:text="Test الإعدادات"
             android:textStyle="bold"
             android:textSize="14sp"
             android:textColor="?attr/colorAccent"
@@ -229,7 +229,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:textSize="13sp"
-                android:text="Phone (to check the test is running)" />
+                android:text="Phone (إلى check the test is running)" />
         </LinearLayout>
 
         <!-- Log -->

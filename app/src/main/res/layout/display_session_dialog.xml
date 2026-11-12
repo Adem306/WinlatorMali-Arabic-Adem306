@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="@string/toggle_fullscreen"
+                android:text="@string/تبديل_ملء الشاشة"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -101,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="@string/pause"
+                android:text="@string/إيقاف مؤقت"
                 android:textSize="16sp" />
         </LinearLayout>
 

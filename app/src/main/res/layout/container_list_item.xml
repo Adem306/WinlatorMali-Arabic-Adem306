@@ -87,7 +87,7 @@
             android:padding="10dp"
             android:clickable="true"
             android:focusable="true"
-            android:contentDescription="@string/run"
+            android:contentDescription="@string/تشغيل"
             android:src="@drawable/icon_run" />
 
         <ImageView

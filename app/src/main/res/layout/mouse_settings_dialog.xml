@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="@string/relative_mouse_movement" />
+        android:text="@string/نسبي_الفأرة_الحركة" />
 
     <CheckBox
         android:id="@+id/CBMouseEnabled"
@@ -19,6 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="@string/enable_mouse" />
+        android:text="@string/تمكين_الفأرة" />
 
 </LinearLayout>

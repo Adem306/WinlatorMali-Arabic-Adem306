@@ -34,7 +34,7 @@
         style="@style/ButtonNeutral"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="Reset Statistics"
+        android:text="إعادة ضبط Statistics"
         android:textSize="14sp" />
 
 </LinearLayout>

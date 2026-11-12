@@ -31,7 +31,7 @@
                         android:id="@+id/TVNoControllers"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="No physical controllers detected.\nConnect a gamepad via USB or Bluetooth."
+                        android:text="لا physical controllers detected.\nConnect a gamepad via USB or Bluetooth."
                         android:textSize="12sp"
                         android:textColor="?android:attr/textColorSecondary"
                         android:padding="4dp"
@@ -41,7 +41,7 @@
 
                 <TextView
                     style="@style/FieldSetLabel"
-                    android:text="Connected Controllers" />
+                    android:text="متصل Controllers" />
             </FrameLayout>
 
             <!-- ── Per-Slot Settings ── -->

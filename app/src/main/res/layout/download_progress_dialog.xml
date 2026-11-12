@@ -59,7 +59,7 @@
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="?android:attr/textColorPrimary"
-                android:text="@string/downloading_file" />
+                android:text="@string/downloading_الملف" />
         </LinearLayout>
 
         <LinearLayout
@@ -71,7 +71,7 @@
 
             <Button
                 style="@style/ButtonNeutral"
-                android:text="@string/cancel"
+                android:text="@string/إلغاء"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:id="@+id/BTCancel" />

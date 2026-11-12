@@ -36,22 +36,22 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Input &amp; Display" />
+                android:text="الإدخال &amp; الشاشة" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Storage &amp; Audio" />
+                android:text="التخزين &amp; Audio" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Performance" />
+                android:text="الأداء" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Advanced" />
+                android:text="متقدم" />
         </com.google.android.material.tabs.TabLayout>
 
         <ScrollView
@@ -129,7 +129,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Custom Palette Editor"
+                                android:text="مخصص Palette Editor"
                                 android:textSize="14sp" />
 
                             <ImageButton
@@ -175,7 +175,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/box64_preset"
+                            android:text="@string/box64_إعداد مسبق"
                             android:textStyle="bold"
                             android:textSize="13sp"
                             android:textColor="?android:attr/textColorSecondary"
@@ -255,7 +255,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/fexcore_preset"
+                            android:text="@string/fexcore_إعداد مسبق"
                             android:textStyle="bold"
                             android:textSize="13sp"
                             android:textColor="?android:attr/textColorSecondary"
@@ -354,7 +354,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="@string/cursor_speed"
+                                android:text="@string/المؤشر_السرعة"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
 
@@ -379,7 +379,7 @@
                             android:id="@+id/CBMoveCursorToTouchpoint"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/move_cursor_to_touchpoint"
+                            android:text="@string/move_المؤشر_إلى_touchpoint"
                             android:layout_marginVertical="3dp" />
 
                         <View
@@ -392,21 +392,21 @@
                             android:id="@+id/CBUseDRI3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/use_dri3_extension"
+                            android:text="@string/استخدام_dri3_إضافة"
                             android:layout_marginVertical="3dp" />
 
                         <CheckBox
                             android:id="@+id/CBCursorLock"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Capture External Pointer (Mouse Lock)"
+                            android:text="Capture خارجية Pointer (الفأرة Lock)"
                             android:layout_marginVertical="3dp" />
 
                         <CheckBox
                             android:id="@+id/CBXinputToggle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Disable XInput (Exclusive Mouse/Keyboard Mode)"
+                            android:text="تعطيل XInput (Exclusive الفأرة/لوحة المفاتيح Mode)"
                             android:layout_marginVertical="3dp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -426,7 +426,7 @@
                         android:id="@+id/TVShortcutSettings"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Storage Paths"
+                        android:text="التخزين Paths"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -443,7 +443,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Winlator Storage Path"
+                            android:text="Winlator التخزين المسار"
                             android:textStyle="bold"
                             android:textSize="13sp"
                             android:textColor="?android:attr/textColorSecondary" />
@@ -477,7 +477,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Shortcut Export Path"
+                            android:text="Shortcut تصدير المسار"
                             android:textStyle="bold"
                             android:textSize="13sp"
                             android:textColor="?android:attr/textColorSecondary" />
@@ -543,7 +543,7 @@
                             <ImageView
                                 android:id="@+id/BTHelpApiKey"
                                 style="@style/HelpButton"
-                                android:contentDescription="@string/help_steamgrid"
+                                android:contentDescription="@string/المساعدة_steamgrid"
                                 android:src="@drawable/icon_help" />
                         </LinearLayout>
 
@@ -627,7 +627,7 @@
                         android:id="@+id/TVPerformanceHeader"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Non-Root Performance Enhancements"
+                        android:text="Non-Root الأداء التحسينات"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -653,7 +653,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Informs Android and OEM Game Boosters (HyperBoost, Game Turbo, Samsung Game Booster, Pixel Game Dashboard) that an active game is running."
+                            android:text="Informs Android and OEM Game Boosters (HyperBoost, Game Turbo, Samsung Game Booster, Pixel Game Dashboard) ذلك an active اللعبة is running."
                             android:textSize="11sp"
                             android:textColor="?android:attr/textColorSecondary"
                             android:layout_marginStart="32dp"
@@ -671,7 +671,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Promotes Box64/Wine CPU worker threads from default nice 0 to urgent display priorities (-8/-4/-2) without downgrading render threads."
+                            android:text="Promotes Box64/Wine CPU worker threads from افتراضي nice 0 إلى urgent عرض priorities (-8/-4/-2) without downgrading عرض threads."
                             android:textSize="11sp"
                             android:textColor="?android:attr/textColorSecondary"
                             android:layout_marginStart="32dp"
@@ -689,7 +689,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Dynamically detects the device's Prime/Big CPU cluster and pins emulation threads to high-performance cores via taskset affinity."
+                            android:text="Dynamically detects the device&#x27;s Prime/Big CPU cluster and pins emulation threads إلى high-performance cores via taskset تقارب."
                             android:textSize="11sp"
                             android:textColor="?android:attr/textColorSecondary"
                             android:layout_marginStart="32dp"
@@ -700,14 +700,14 @@
                             android:id="@+id/CBHighRefreshRate"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Force High Refresh Rate"
+                            android:text="فرض High تحديث Rate"
                             android:textStyle="bold"
                             android:textSize="13sp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Attempts to set the display to its maximum supported refresh rate (e.g., 120Hz/144Hz) to reduce input lag."
+                            android:text="Attempts إلى set the عرض إلى its أقصى supported تحديث rate (e.g., 120Hz/144Hz) إلى reduce الإدخال lag."
                             android:textSize="11sp"
                             android:textColor="?android:attr/textColorSecondary"
                             android:layout_marginStart="32dp"
@@ -718,14 +718,14 @@
                             android:id="@+id/CBSustainedPerformance"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Sustained Performance Mode"
+                            android:text="Sustained الأداء Mode"
                             android:textStyle="bold"
                             android:textSize="13sp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Requests Android sustained performance mode to prevent abrupt thermal clock throttling spikes and maintain consistent frame pacing."
+                            android:text="Requests Android sustained الأداء mode إلى prevent abrupt thermal clock throttling spikes and maintain consistent frame pacing."
                             android:textSize="11sp"
                             android:textColor="?android:attr/textColorSecondary"
                             android:layout_marginStart="32dp"
@@ -772,7 +772,7 @@
                         android:id="@+id/TVExperimental"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Catalog Settings"
+                        android:text="Catalog الإعدادات"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -789,7 +789,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Download Catalog Source"
+                            android:text="تنزيل Catalog Source"
                             android:textStyle="bold"
                             android:textSize="13sp"
                             android:textColor="?android:attr/textColorSecondary"
@@ -822,7 +822,7 @@
                         android:id="@+id/TVSystem"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/system"
+                        android:text="@string/النظام"
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="?attr/colorAccent"
@@ -847,7 +847,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="@string/enable_file_provider" />
+                                android:text="@string/تمكين_الملف_provider" />
 
                             <ImageView
                                 android:id="@+id/BTHelpFileProvider"
@@ -858,21 +858,21 @@
                             android:id="@+id/CBOpenWithAndroidBrowser"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/open_with_android_browser"
+                            android:text="@string/فتح_مع_android_browser"
                             android:layout_marginVertical="3dp" />
 
                         <CheckBox
                             android:id="@+id/CBShareAndroidClipboard"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/share_android_clipboard"
+                            android:text="@string/مشاركة_android_clipboard"
                             android:layout_marginVertical="3dp" />
 
                         <CheckBox
                             android:id="@+id/CBShowAdrenoTools"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/show_adrenotools_unsupported"
+                            android:text="@string/إظهار_adrenotools_unsupported"
                             android:layout_marginVertical="3dp" />
                     </LinearLayout>
 
@@ -916,7 +916,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Log Manager"
+                                    android:text="Log مدير"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
 
@@ -926,7 +926,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
                                     android:textSize="12sp"
-                                    android:text="What to record, where logs go, and every game's logs" />
+                                    android:text="What إلى record, where logs go, and every game&#x27;s logs" />
                             </LinearLayout>
 
                             <TextView

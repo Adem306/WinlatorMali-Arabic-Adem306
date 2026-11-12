@@ -15,7 +15,7 @@
         android:src="@drawable/icon_info"
         app:tint="?android:attr/textColorSecondary"
         android:layout_marginEnd="12dp"
-        android:contentDescription="Device Icon"/>
+        android:contentDescription="Device أيقونة"/>
 
     <LinearLayout
         android:layout_width="0dp"
